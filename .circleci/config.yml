@@ -7,8 +7,9 @@ jobs:
   build:
     docker:
       - image: circleci/node:16
-    environment:
-      VERCEL_PROJECT_ID: prj_sAbgfGT8IZyCfvlKpQikbouARMlv
+    # environment:
+    #   VERCEL_PROJECT_ID: prj_sAbgfGT8IZyCfvlKpQikbouARMlv
+    #   VERCEL_ORG_ID: 
     steps:
       - checkout
       - run:
