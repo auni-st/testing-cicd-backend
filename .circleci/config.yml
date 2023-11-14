@@ -1,7 +1,7 @@
 version: 2.1
 
-orbs:
-  vercel: circleci/vercel@1.0.1
+# orbs:
+#   vercel: circleci/vercel@latest
 
 jobs:
   build:
