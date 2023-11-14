@@ -1,0 +1,30 @@
+version: 2.1
+
+orbs:
+  vercel: circleci/vercel@1.0.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Install Vercel CLI
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.22.5
+            export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+            yarn global add vercel
+      - run:
+          name: Deploy to Vercel
+          command: |
+            # vercel --token $VERCEL_TOKEN --prod
+            vercel --token "Q42grJbnfYvQQcIxkl41G4zQ" --prod
+
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          context: org-global
