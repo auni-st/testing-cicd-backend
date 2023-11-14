@@ -25,7 +25,7 @@ jobs:
           name: Deploy to Vercel
           command: |
             # vercel --token $VERCEL_TOKEN --prod
-            vercel --token "Q42grJbnfYvQQcIxkl41G4zQ" --prod
+            vercel --token "Q42grJbnfYvQQcIxkl41G4zQ" --prod --confirm
 
 
 workflows:
