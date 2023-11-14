@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run:
           name: Install Vercel CLI
-          command: npm install --global vercel@latest
+          command: sudo npm install --global vercel@latest
       # - run:
       #     name: Install Vercel CLI
       #     command: |
