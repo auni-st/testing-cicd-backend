@@ -5,7 +5,7 @@
   "functions": {
     "api/index.js": {
       "runtime": "nodejs14.x",
-      "maxDuration": 30,
+      "maxDuration": 5,
       "memory": 1024
     }
   }
